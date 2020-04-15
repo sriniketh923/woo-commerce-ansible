@@ -1,0 +1,12 @@
+- hosts: database
+  become: yes
+  roles:
+    - mysql
+
+- hosts: webserver
+  become: yes
+  roles:
+    - server
+    - php
+    - wp-cli
+    - wordpress

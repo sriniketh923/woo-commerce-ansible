@@ -1,0 +1,7 @@
+---
+- name: Install WP-CLI
+  get_url:
+    url=https://github.com/wp-cli/wp-cli/releases/download/v2.4.0/wp-cli-2.4.0.phar
+    dest=/usr/local/bin/wp
+    mode=0755
+  become: yes
